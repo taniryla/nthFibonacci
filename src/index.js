@@ -55,4 +55,16 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-function nthFibonacci(number) {}
+function fibonacci(number) {
+  let arr = [];
+  // base case
+  if (number === 0) return;
+  // recursion
+  let nextNum = nthFibonacci(number - 1);
+  arr.push(nextNum);
+  return number + nextNum;
+}
+
+function nthFibonacci(nextNum) {
+  return nextNum[number];
+}
