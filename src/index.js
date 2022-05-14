@@ -55,17 +55,7 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-function fibonacciArr(number) {
-  let arr = [];
-  let counter = number;
-  // base case
-  if (number === 0) return;
-  // recursion
-  let nextNum = fibonacciArr(number - 1);
-  arr.push(nextNum);
-  return number + nextNum;
-}
-
-function nthFibonacci(arr, number) {
-  return arr[number];
+function fib(number) {
+  if (number <= 2) return 1;
+  return fib(n - 1) + fib(n - 2);
 }
